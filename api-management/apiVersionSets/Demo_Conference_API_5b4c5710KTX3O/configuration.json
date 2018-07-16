@@ -1,0 +1,9 @@
+{
+  "id": "/api-version-sets/5b4c57ebb11e20ca5ce65dea",
+  "name": "Demo Conference API",
+  "description": null,
+  "versioningScheme": "Segment",
+  "versionQueryName": null,
+  "versionHeaderName": null,
+  "__GitModuleVersion": 15
+}

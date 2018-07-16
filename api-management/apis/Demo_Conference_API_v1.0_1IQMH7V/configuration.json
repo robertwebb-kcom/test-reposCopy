@@ -1,0 +1,520 @@
+{
+  "id": "/apis/demo-conference-api",
+  "name": "Demo Conference API",
+  "apiRevision": "1",
+  "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/api.description.html",
+  "serviceUrl": "https://conferenceapi.azurewebsites.net",
+  "path": "demo-conference-api",
+  "protocols": [
+    "http",
+    "https"
+  ],
+  "authenticationSettings": {
+    "oAuth2": null,
+    "openid": null
+  },
+  "subscriptionKeyParameterNames": {
+    "header": "Ocp-Apim-Subscription-Key",
+    "query": "subscription-key"
+  },
+  "isCurrent": true,
+  "apiVersion": "v1.0",
+  "apiVersionSetId": "/api-version-sets/5b4c57ebb11e20ca5ce65dea",
+  "operations": [
+    {
+      "id": "/apis/demo-conference-api/operations/GetSession",
+      "name": "GetSession",
+      "method": "GET",
+      "urlTemplate": "/session/{id}",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__session_{id}.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__session_{id}.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/hal+json",
+              "$ref-sample": null
+            },
+            {
+              "contentType": "text/plain",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetSessions",
+      "name": "GetSessions",
+      "method": "GET",
+      "urlTemplate": "/sessions",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__sessions.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [
+          {
+            "name": "speakername",
+            "description": null,
+            "type": "string",
+            "defaultValue": null,
+            "required": false,
+            "values": []
+          },
+          {
+            "name": "dayno",
+            "description": "Format - int32.",
+            "type": "integer",
+            "defaultValue": null,
+            "required": false,
+            "values": []
+          },
+          {
+            "name": "keyword",
+            "description": null,
+            "type": "string",
+            "defaultValue": null,
+            "required": false,
+            "values": []
+          }
+        ],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__sessions.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.collection+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetSessionTopics",
+      "name": "GetSessionTopics",
+      "method": "GET",
+      "urlTemplate": "/session/{id}/topics",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__session_{id}_topics.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__session_{id}_topics.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.collection+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetSpeaker",
+      "name": "GetSpeaker",
+      "method": "GET",
+      "urlTemplate": "/speaker/{id}",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__speaker_{id}.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.hal+json",
+              "$ref-sample": null
+            },
+            {
+              "contentType": "text/plain",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetSpeakers",
+      "name": "GetSpeakers",
+      "method": "GET",
+      "urlTemplate": "/speakers",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [
+          {
+            "name": "dayno",
+            "description": "Format - int32.",
+            "type": "integer",
+            "defaultValue": null,
+            "required": false,
+            "values": []
+          },
+          {
+            "name": "speakername",
+            "description": null,
+            "type": "string",
+            "defaultValue": null,
+            "required": false,
+            "values": []
+          }
+        ],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__speakers.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.collection+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetSpeakerSessions",
+      "name": "GetSpeakerSessions",
+      "method": "GET",
+      "urlTemplate": "/speaker/{id}/sessions",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__speaker_{id}_sessions.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.collection+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetSpeakerTopics",
+      "name": "GetSpeakerTopics",
+      "method": "GET",
+      "urlTemplate": "/speaker/{id}/topics",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__speaker_{id}_topics.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.collection+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetTopic",
+      "name": "GetTopic",
+      "method": "GET",
+      "urlTemplate": "/topic/{id}",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__topic_{id}.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/hal+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetTopics",
+      "name": "GetTopics",
+      "method": "GET",
+      "urlTemplate": "/topics",
+      "templateParameters": [],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [
+          {
+            "name": "dayno",
+            "description": "Format - int32.",
+            "type": "integer",
+            "defaultValue": null,
+            "required": false,
+            "values": []
+          }
+        ],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__topics.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.collection+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetTopicSessions",
+      "name": "GetTopicSessions",
+      "method": "GET",
+      "urlTemplate": "/topic/{id}/sessions",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__topic_{id}_sessions.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.collection+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/GetTopicSpeakers",
+      "name": "GetTopicSpeakers",
+      "method": "GET",
+      "urlTemplate": "/topic/{id}/speakers",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": null,
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/GET__topic_{id}_speakers.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/vnd.collection+json",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/demo-conference-api/operations/SubmitSession",
+      "name": "SubmitSession",
+      "method": "POST",
+      "urlTemplate": "/session/{id}/feedback",
+      "templateParameters": [
+        {
+          "name": "id",
+          "description": "Format - int32.",
+          "type": "integer",
+          "defaultValue": null,
+          "required": true,
+          "values": []
+        }
+      ],
+      "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/POST__session_{id}_feedback.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "text/plain",
+            "$ref-sample": null,
+            "schemaId": "5b4c57f394b750137022c642",
+            "typeName": "Body"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/operations/POST__session_{id}_feedback.response.200.description.html",
+          "representations": [
+            {
+              "contentType": "application/hal+json",
+              "$ref-sample": null
+            },
+            {
+              "contentType": "text/plain",
+              "$ref-sample": null
+            }
+          ],
+          "headers": []
+        }
+      ],
+      "policies": null
+    }
+  ],
+  "apiSchemas": [
+    {
+      "id": "/apis/demo-conference-api/schemas/5b4c57f394b750137022c642",
+      "contentType": "application/vnd.ms-azure-apim.swagger.definitions+json",
+      "$ref-documentValue": "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/apiSchemas/5b4c57f394b750137022c642.document"
+    }
+  ],
+  "__GitModuleVersion": 15
+}

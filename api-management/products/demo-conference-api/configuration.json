@@ -1,0 +1,17 @@
+{
+  "id": "/products/demo-conference-api",
+  "name": "demo-conference-api",
+  "$ref-description": "api-management/products/demo-conference-api/product.description.html",
+  "terms": null,
+  "subscriptionRequired": true,
+  "approvalRequired": false,
+  "subscriptionsLimit": null,
+  "state": "published",
+  "$refs-groups": [
+    "api-management/groups/Administrators/configuration.json"
+  ],
+  "$refs-apis": [
+    "api-management/apis/Demo_Conference_API_v1.0_1IQMH7V/configuration.json"
+  ],
+  "__GitModuleVersion": 15
+}
