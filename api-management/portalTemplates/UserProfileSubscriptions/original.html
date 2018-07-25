@@ -9,10 +9,10 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Subscription details</th>
-        <th>Product</th>
+        <th>{% localized "SubscriptionListStrings|SubscriptionPropertyLabelDetails" %}</th>
+        <th>{% localized "SubscriptionListStrings|SubscriptionPropertyLabelProduct" %}</th>
         <th>{% localized "SubscriptionListStrings|WebDevelopersSubscriptionTableStateHeader" %}</th>
-        <th>Action</th>
+        <th>{% localized "SubscriptionListStrings|SubscriptionPropertyLabelAction" %}</th>
       </tr>
     </thead>
     <tbody>
@@ -32,7 +32,7 @@
               {{ subscription.displayName }}
             </div>
             <div class="col-lg-2">
-              <a class="btn-link" href="/Subscriptions/{{subscription.id}}/Rename">Rename</a>
+              <a class="btn-link" href="/Subscriptions/{{subscription.id}}/Rename">{% localized "SubscriptionListStrings|SubscriptionPropertyLabelRename" %}</a>
             </div>
             <div class="clearfix"></div>
           </div>
