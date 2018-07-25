@@ -1,0 +1,205 @@
+{
+  "id": "/apis/5b587819e051feb5ba2b294d",
+  "name": "Echo API (clone)",
+  "apiRevision": "1",
+  "$ref-description": null,
+  "serviceUrl": "http://echoapi.cloudapp.net/api",
+  "path": "echo-clone",
+  "protocols": [
+    "https"
+  ],
+  "authenticationSettings": {
+    "oAuth2": null,
+    "openid": null
+  },
+  "subscriptionKeyParameterNames": {
+    "header": "Ocp-Apim-Subscription-Key",
+    "query": "subscription-key"
+  },
+  "isCurrent": true,
+  "operations": [
+    {
+      "id": "/apis/5b587819e051feb5ba2b294d/operations/5b58781bf323db4cd5cf7395",
+      "name": "Create resource",
+      "method": "POST",
+      "urlTemplate": "/resource",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Echo_API_(clone)__1[Current]/operations/POST__resource.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": [
+          {
+            "contentType": "application/json",
+            "$ref-sample": "api-management/apis/Echo_API_(clone)__1[Current]/operations/POST__resource.request.application_json.html"
+          }
+        ]
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": null,
+          "representations": [],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/5b587819e051feb5ba2b294d/operations/5b58781b8dace93c9bb6fe79",
+      "name": "Modify Resource",
+      "method": "PUT",
+      "urlTemplate": "/resource",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Echo_API_(clone)__1[Current]/operations/PUT__resource.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": null,
+          "representations": [],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/5b587819e051feb5ba2b294d/operations/5b58781b63e5bb6210f69d89",
+      "name": "Remove resource",
+      "method": "DELETE",
+      "urlTemplate": "/resource",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Echo_API_(clone)__1[Current]/operations/DELETE__resource.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": null,
+          "representations": [],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/5b587819e051feb5ba2b294d/operations/5b58781c1f83045801e1cb40",
+      "name": "Retrieve header only",
+      "method": "HEAD",
+      "urlTemplate": "/resource",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Echo_API_(clone)__1[Current]/operations/HEAD__resource.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": null,
+          "representations": [],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/5b587819e051feb5ba2b294d/operations/5b58781c879956c4cb5c250e",
+      "name": "Retrieve resource",
+      "method": "GET",
+      "urlTemplate": "/resource",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Echo_API_(clone)__1[Current]/operations/GET__resource.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [
+          {
+            "name": "param1",
+            "description": "A sample parameter that is required and has a default value of \"sample\".",
+            "type": "string",
+            "defaultValue": "sample",
+            "required": true,
+            "values": [
+              "sample"
+            ]
+          },
+          {
+            "name": "param2",
+            "description": "Another sample parameter, set to not required.",
+            "type": "number",
+            "defaultValue": null,
+            "required": false,
+            "values": []
+          }
+        ],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": "api-management/apis/Echo_API_(clone)__1[Current]/operations/GET__resource.response.200.description.html",
+          "representations": [],
+          "headers": []
+        }
+      ],
+      "policies": null
+    },
+    {
+      "id": "/apis/5b587819e051feb5ba2b294d/operations/5b58781c66ad884df15fb2ca",
+      "name": "Retrieve resource (cached)",
+      "method": "GET",
+      "urlTemplate": "/resource-cached",
+      "templateParameters": [],
+      "$ref-description": "api-management/apis/Echo_API_(clone)__1[Current]/operations/GET__resource-cached.description.html",
+      "request": {
+        "$ref-description": null,
+        "queryParameters": [
+          {
+            "name": "param1",
+            "description": "A sample parameter that is required and has a default value of \"sample\".",
+            "type": "string",
+            "defaultValue": "sample",
+            "required": true,
+            "values": [
+              "sample"
+            ]
+          },
+          {
+            "name": "param2",
+            "description": "Another sample parameter, set to not required.",
+            "type": "string",
+            "defaultValue": null,
+            "required": false,
+            "values": []
+          }
+        ],
+        "headers": [],
+        "representations": []
+      },
+      "responses": [
+        {
+          "statusCode": 200,
+          "$ref-description": null,
+          "representations": [],
+          "headers": []
+        }
+      ],
+      "policies": null
+    }
+  ],
+  "apiSchemas": [],
+  "__GitModuleVersion": 15
+}
