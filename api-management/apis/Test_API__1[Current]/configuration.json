@@ -1,6 +1,6 @@
 {
   "id": "/apis/test-api",
-  "name": "Test API",
+  "name": "Test API V2",
   "apiRevision": "1",
   "$ref-description": "",
   "serviceUrl": null,
