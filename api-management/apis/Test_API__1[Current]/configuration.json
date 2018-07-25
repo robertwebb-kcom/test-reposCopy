@@ -2,7 +2,7 @@
   "id": "/apis/test-api",
   "name": "Test API",
   "apiRevision": "1",
-  "$ref-description": "",
+  "$ref-description": null,
   "serviceUrl": null,
   "path": "",
   "protocols": [
@@ -25,7 +25,7 @@
       "method": "GET",
       "urlTemplate": "/test",
       "templateParameters": [],
-      "$ref-description": "",
+      "$ref-description": null,
       "request": {
         "$ref-description": null,
         "queryParameters": [],
@@ -35,7 +35,7 @@
       "responses": [
         {
           "statusCode": 200,
-          "$ref-description": "",
+          "$ref-description": null,
           "representations": [
             {
               "contentType": "application/json",
@@ -46,7 +46,7 @@
         },
         {
           "statusCode": 201,
-          "$ref-description": "",
+          "$ref-description": null,
           "representations": [
             {
               "contentType": "application/json",
