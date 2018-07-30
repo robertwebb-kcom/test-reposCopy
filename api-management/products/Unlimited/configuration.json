@@ -14,7 +14,7 @@
   ],
   "$refs-apis": [
     "api-management/apis/Echo_API__1[Current]/configuration.json",
-    "api-management/apis/Test_API_V18__1[Current]/configuration.json"
+    "api-management/apis/Test_API_V19__1[Current]/configuration.json"
   ],
   "__GitModuleVersion": 15
 }
