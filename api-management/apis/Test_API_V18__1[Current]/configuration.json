@@ -1,6 +1,6 @@
 {
   "id": "/apis/test-api",
-  "name": "Test API V16",
+  "name": "Test API V18",
   "apiRevision": "1",
   "$ref-description": null,
   "serviceUrl": null,
@@ -39,7 +39,7 @@
           "representations": [
             {
               "contentType": "application/json",
-              "$ref-sample": "api-management/apis/Test_API_V16__1[Current]/operations/GET__test.response.200.application_json.html"
+              "$ref-sample": "api-management/apis/Test_API_V18__1[Current]/operations/GET__test.response.200.application_json.html"
             }
           ],
           "headers": []
@@ -50,14 +50,14 @@
           "representations": [
             {
               "contentType": "application/json",
-              "$ref-sample": "api-management/apis/Test_API_V16__1[Current]/operations/GET__test.response.201.application_json.html"
+              "$ref-sample": "api-management/apis/Test_API_V18__1[Current]/operations/GET__test.response.201.application_json.html"
             }
           ],
           "headers": []
         }
       ],
       "policies": null,
-      "$ref-policy": "api-management/policies/apis/Test_API_V16__1[Current]/operations/GET__test.xml"
+      "$ref-policy": "api-management/policies/apis/Test_API_V18__1[Current]/operations/GET__test.xml"
     },
     {
       "id": "/apis/test-api/operations/5b5877a8e869b9d04cd4820b",
@@ -79,7 +79,7 @@
           "representations": [
             {
               "contentType": "application/json",
-              "$ref-sample": "api-management/apis/Test_API_V16__1[Current]/operations/GET__copy-5b587-of-_test.response.200.application_json.html"
+              "$ref-sample": "api-management/apis/Test_API_V18__1[Current]/operations/GET__copy-5b587-of-_test.response.200.application_json.html"
             }
           ],
           "headers": []
@@ -90,14 +90,14 @@
           "representations": [
             {
               "contentType": "application/json",
-              "$ref-sample": "api-management/apis/Test_API_V16__1[Current]/operations/GET__copy-5b587-of-_test.response.201.application_json.html"
+              "$ref-sample": "api-management/apis/Test_API_V18__1[Current]/operations/GET__copy-5b587-of-_test.response.201.application_json.html"
             }
           ],
           "headers": []
         }
       ],
       "policies": null,
-      "$ref-policy": "api-management/policies/apis/Test_API_V16__1[Current]/operations/GET__copy-5b587-of-_test.xml"
+      "$ref-policy": "api-management/policies/apis/Test_API_V18__1[Current]/operations/GET__copy-5b587-of-_test.xml"
     }
   ],
   "apiSchemas": [],
